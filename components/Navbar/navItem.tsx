@@ -10,7 +10,7 @@ const NavItem = (props: NavItemInterface) => {
   return (
     <li>
       <Link
-        className="text-2xl text-sky-800 dark:text-pink-200 relative group"
+        className="text-2xl dark:text-pink-400 text-sky-900  relative group"
         href={props.url}
       >
         {props.label}

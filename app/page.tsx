@@ -1,5 +1,9 @@
-import Toggle from "@/components/Navbar/toggle";
+import Banner from "@/components/Banner/banner";
 
 export default function Home() {
-  return <div></div>;
+  return (
+    <div>
+      <Banner />
+    </div>
+  );
 }
