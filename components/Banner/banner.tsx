@@ -5,10 +5,10 @@ import Icons from "./icons";
 
 const Banner = () => {
   return (
-    <div className="flex gap-32 justify-center items-center mt-14">
-      <div className="flex w-1/4 flex-col">
-        <div className="flex flex-col gap-2">
-          <p className="text-pink-400  text-4xl font-bold">Hello World, I'm</p>
+    <div className="flex flex-col mt-4 gap-11 lg:gap-32  lg:justify-center items-center lg:mt-14 lg:flex-row">
+      <div className="flex lg:w-1/4 flex-col gap-6">
+        <div className="flex flex-col gap-3 lg:gap-2 mt-5">
+          <p className="text-pink-400  text-4xl font-bold ">Hello World, I'm</p>
           <MagicText text="Larissa Akemi" duration={250} />
           <WordRotate
             duration={2800}
@@ -16,21 +16,21 @@ const Banner = () => {
             words={["Software Engineer", "Full-Stack Developer"]}
           />
         </div>
-        <div>
+        <div className="m-auto lg:m-0">
           <Icons />
         </div>
       </div>
-      <div>
+      <div className="order-first grow-0  lg:order-last ">
         <ShineBorder
           borderRadius={200}
-          className="rounded-full p-0"
+          className="rounded-full min-h-0 min-w-0 p-0 aspect-square"
           color={["#A07CFE", "#FE8FB5", "#fb6f92", "#ff99c8"]}
           borderWidth={5}
         >
           <img
             src={"/avatar.jpeg"}
             alt="arte digital"
-            className="rounded-full aspect-square object-cover w-96 "
+            className="rounded-full aspect-square object-cover w-60 lg:w-96 "
           />
         </ShineBorder>
       </div>

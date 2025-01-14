@@ -30,7 +30,7 @@ export const Navbar = () => {
     },
   ];
   return (
-    <nav className="flex relative justify-center h-32 items-center mx-auto">
+    <nav className="flex relative justify-center h-32 items-center mx-auto z-50">
       <div className="lg:hidden absolute top-[50%] z-10 left-11">
         <Hamburger
           toggled={isOpen}
@@ -41,11 +41,11 @@ export const Navbar = () => {
         />
       </div>
       <div
-        className={`flex items-center absolute left-11 top-[110%] lg:hidden ${
+        className={`flex items-center absolute left-0  top-[110%] lg:hidden w-screen h-[calc(100vh-300px)] ${
           isOpen ? "visible" : "hidden"
         }`}
       >
-        <ul className="flex flex-col gap-12 ">
+        <ul className="flex flex-col gap-12 pl-11 bg-slate-950 w-full h-full">
           {items.map((item, index) => (
             <NavItem key={index} url={item.url} label={item.label} />
           ))}
