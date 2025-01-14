@@ -2,6 +2,7 @@
 import { useState } from "react";
 import NavItem, { NavItemInterface } from "./navItem";
 import { Divide as Hamburger } from "hamburger-react";
+import ThemeToggle from "./toggle";
 
 export const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -57,6 +58,9 @@ export const Navbar = () => {
             <NavItem key={index} url={item.url} label={item.label} />
           ))}
         </ul>
+      </div>
+      <div className="absolute right-4 top-[50%] lg:top-[35%]">
+        <ThemeToggle />
       </div>
     </nav>
   );

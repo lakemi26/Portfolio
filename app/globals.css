@@ -2,7 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+@layer base {
+  body {
+    @apply dark:bg-slate-950 bg-blue-200 text-slate-950 dark:text-pink-100;
+  }
+}
+
+/* :root {
   --background: #000;
   --foreground: #fff;
-}
+} */
