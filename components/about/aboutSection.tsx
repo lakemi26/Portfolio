@@ -2,6 +2,7 @@ import React from "react";
 import { TextAnimate } from "../ui/text-animate";
 import TextAbout from "./textAbout";
 import Skils from "./skils";
+import DaysOfCode from "./daysOfCode";
 
 const AboutSection = () => {
   return (
@@ -14,11 +15,14 @@ const AboutSection = () => {
           <div>
             <TextAbout />
           </div>
-          <div>{/* days of code */}</div>
+          <div></div>
         </div>
         <div>
           <Skils />
         </div>
+      </div>
+      <div className="flex justify-center lg:mt-10">
+        <DaysOfCode />
       </div>
     </div>
   );
