@@ -20,6 +20,7 @@ const DaysOfCode = () => {
   const currentTheme = theme as "dark" | "light" | undefined;
   return (
     <div className="">
+      <p className="lg:mb-4 text-pink-400 font-bold">Days of code</p>
       <GitHubCalendar
         theme={themes}
         colorScheme={!currentTheme ? "dark" : currentTheme}
