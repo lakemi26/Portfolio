@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -15,6 +14,7 @@ import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import { Button } from "../ui/button";
 import { sendMessage } from "@/actions/actions";
+import confetti from "canvas-confetti";
 
 const schema = z.object({
   name: z.string().min(1, { message: "Coloque seu nome" }),
@@ -25,15 +25,45 @@ const schema = z.object({
 });
 export type MessageForm = z.infer<typeof schema>;
 
-const onSubmit = (data: MessageForm) => {
-  sendMessage(data);
-};
-
 const Contact = () => {
   const form = useForm<z.infer<typeof schema>>({
     resolver: zodResolver(schema),
     defaultValues: { name: "", email: "", subject: "", phone: "", message: "" },
   });
+
+  const onSubmit = async (data: MessageForm) => {
+    const result = await sendMessage(data);
+    const end = Date.now() + 3 * 1000; // 3 seconds
+    const colors = ["#a786ff", "#fd8bbc", "#eca184", "#f8deb1"];
+
+    const frame = () => {
+      if (Date.now() > end) return;
+
+      confetti({
+        particleCount: 2,
+        angle: 60,
+        spread: 55,
+        startVelocity: 60,
+        origin: { x: 0, y: 0.5 },
+        colors: colors,
+      });
+      confetti({
+        particleCount: 2,
+        angle: 120,
+        spread: 55,
+        startVelocity: 60,
+        origin: { x: 1, y: 0.5 },
+        colors: colors,
+      });
+
+      requestAnimationFrame(frame);
+    };
+    if (result) {
+      frame();
+      form.reset();
+    }
+  };
+
   return (
     <div className="flex gap-4 flex-col">
       <p className="text-pink-400 font-semibold text-4xl">Contact</p>
