@@ -15,6 +15,7 @@ import { Textarea } from "../ui/textarea";
 import { Button } from "../ui/button";
 import { sendMessage } from "@/actions/actions";
 import confetti from "canvas-confetti";
+import { Bounce, ToastContainer, toast } from "react-toastify";
 
 const schema = z.object({
   name: z.string().min(1, { message: "Coloque seu nome" }),
@@ -61,6 +62,18 @@ const Contact = () => {
     if (result) {
       frame();
       form.reset();
+
+      toast.success("🦄 Email Enviado!", {
+        position: "bottom-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        transition: Bounce,
+      });
     }
   };
 
@@ -148,6 +161,7 @@ const Contact = () => {
             <Button type="submit">Enviar</Button>
           </form>
         </Form>
+        <ToastContainer />
       </div>
     </div>
   );
