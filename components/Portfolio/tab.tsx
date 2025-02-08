@@ -2,8 +2,14 @@
 import React from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import { TextAnimate } from "../ui/text-animate";
-import { MagicCard } from "../ui/magic-card";
 import Card from "./card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "../ui/carousel";
 
 const enum WorkTypes {
   FrontEnd = "Front-End",
@@ -42,17 +48,34 @@ const Tab = () => {
             value={WorkTypes.FrontEnd}
             className="lg:w-[992px] flex mt-4"
           >
-            <div className="flex gap-5">
-              <Card
-                image="/placeholder.jpg"
-                title="Estética Ouro"
-                text="um texto qualquer"
-                codeUrl="/"
-                deployUrl="/"
-              />
-              <Card title="Flower Shop" codeUrl="/" deployUrl="/" />
-              <Card title="Happy Tails" codeUrl="/" deployUrl="/" />
-              <Card title="Frangolandia" codeUrl="/" deployUrl="/" />
+            <div className="flex gap-5 w-full">
+              <Carousel className="w-full">
+                <CarouselContent>
+                  <CarouselItem className="basis-1/3">
+                    <Card
+                      image="/placeholder.jpg"
+                      title="Estética Ouro"
+                      text=""
+                      codeUrl="/"
+                      deployUrl="/"
+                    />
+                  </CarouselItem>
+                  <CarouselItem className="basis-1/3">
+                    <Card title="Flower Shop" codeUrl="/" deployUrl="/" />
+                  </CarouselItem>
+                  <CarouselItem className="basis-1/3">
+                    <Card title="Happy Tails" codeUrl="/" deployUrl="/" />
+                  </CarouselItem>
+                  <CarouselItem className="basis-1/3">
+                    <Card title="Frangolandia" codeUrl="/" deployUrl="/" />
+                  </CarouselItem>
+                  <CarouselItem className="basis-1/3">
+                    <Card title="Alguma Coisa" codeUrl="/" deployUrl="/" />
+                  </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
             </div>
           </TabsContent>
           {/* Conteúdo Back-end */}
