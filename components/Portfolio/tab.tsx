@@ -21,8 +21,8 @@ const Tab = () => {
   return (
     <div className="text-pink-400 font-semibold text-4xl">
       <TextAnimate>My Portfolio</TextAnimate>
-      <div className="m-auto w-fit mt-9">
-        <Tabs defaultValue={WorkTypes.FrontEnd} className="w-full">
+      <div className="m-auto w-full lg:w-fit mt-9">
+        <Tabs defaultValue={WorkTypes.FrontEnd} className="lg:w-full">
           <TabsList className="justify-around m-auto flex w-fit">
             <TabsTrigger
               className="data-[state=active]:bg-pink-400/30"
@@ -48,10 +48,10 @@ const Tab = () => {
             value={WorkTypes.FrontEnd}
             className="lg:w-[992px] flex mt-4"
           >
-            <div className="flex gap-5 w-full">
+            <div className="flex gap-5 w-full px-20 lg:px-0">
               <Carousel className="w-full">
                 <CarouselContent>
-                  <CarouselItem className="basis-1/3">
+                  <CarouselItem className="sm:basis-4 md:basis-1/2 lg:basis-1/3 ">
                     <Card
                       image="/placeholder.jpg"
                       title="Estética Ouro"
@@ -60,16 +60,16 @@ const Tab = () => {
                       deployUrl="/"
                     />
                   </CarouselItem>
-                  <CarouselItem className="basis-1/3">
+                  <CarouselItem className="sm:basis-4 md:basis-1/2 lg:basis-1/3">
                     <Card title="Flower Shop" codeUrl="/" deployUrl="/" />
                   </CarouselItem>
-                  <CarouselItem className="basis-1/3">
+                  <CarouselItem className="sm:basis-4 md:basis-1/2 lg:basis-1/3">
                     <Card title="Happy Tails" codeUrl="/" deployUrl="/" />
                   </CarouselItem>
-                  <CarouselItem className="basis-1/3">
+                  <CarouselItem className="sm:basis-4 md:basis-1/2 lg:basis-1/3">
                     <Card title="Frangolandia" codeUrl="/" deployUrl="/" />
                   </CarouselItem>
-                  <CarouselItem className="basis-1/3">
+                  <CarouselItem className="sm:basis-4 md:basis-1/2 lg:basis-1/3">
                     <Card title="Alguma Coisa" codeUrl="/" deployUrl="/" />
                   </CarouselItem>
                 </CarouselContent>
