@@ -11,13 +11,13 @@ const AboutSection = () => {
         About Me
       </TextAnimate>
       <div className="flex gap-8 mt-9">
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-10">
           <div>
             <TextAbout />
           </div>
           <div></div>
         </div>
-        <div>
+        <div className="hidden md:block">
           <Skils />
         </div>
       </div>

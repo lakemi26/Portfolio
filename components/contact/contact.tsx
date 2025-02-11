@@ -78,7 +78,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex gap-4 flex-col">
+    <div className=" flex gap-4 flex-col">
       <p className="text-pink-400 font-semibold text-4xl">Contact</p>
       <div>
         <Form {...form}>
@@ -158,7 +158,9 @@ const Contact = () => {
                 </FormItem>
               )}
             />
-            <Button type="submit">Enviar</Button>
+            <Button type="submit" className="bg-pink-400 self-center">
+              Enviar
+            </Button>
           </form>
         </Form>
         <ToastContainer />
