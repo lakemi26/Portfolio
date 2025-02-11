@@ -21,9 +21,8 @@ const AboutSection = () => {
           <Skils />
         </div>
       </div>
-      <div className="flex justify-center lg:mt-10">
-        <DaysOfCode />
-      </div>
+
+      <DaysOfCode />
     </div>
   );
 };
