@@ -48,7 +48,7 @@ const Tab = () => {
             value={WorkTypes.FrontEnd}
             className="lg:w-[992px] flex mt-4"
           >
-            <div className="flex gap-5 w-full px-20 lg:px-0 md:bg-pink-200 lg:bg-blue-300 xl:bg-purple-300">
+            <div className="flex gap-5 w-full px-20 lg:px-0 ">
               <Carousel className="w-full">
                 <CarouselContent>
                   <CarouselItem className=" md:basis-1/2 lg:basis-1/3 ">
