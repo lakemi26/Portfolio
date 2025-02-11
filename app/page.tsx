@@ -6,7 +6,7 @@ import Tab from "@/components/Portfolio/tab";
 
 export default function Home() {
   return (
-    <div className="lg:px-[464px] flex flex-col gap-12">
+    <div className=" lg:max-w-[992px] m-auto flex flex-col gap-12">
       <Banner />
       <Tab />
       <AboutSection />

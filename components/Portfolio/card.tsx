@@ -3,7 +3,6 @@ import { useTheme } from "next-themes";
 import Buttons from "./buttons";
 import CardTitle from "./title";
 import Image from "next/image";
-import ShineBorder from "../ui/shine-border";
 
 interface CardProps {
   image?: string;
@@ -16,7 +15,7 @@ interface CardProps {
 const Card = ({ image, title, text, deployUrl, codeUrl }: CardProps) => {
   const { theme } = useTheme();
   return (
-    <div className="bg-background border border-pink-400 p-3 rounded-md">
+    <div className="bg-background border border-pink-400 p-3 rounded-md ">
       <div className="space-y-2 ">
         <div className="rounded-md overflow-hidden flex justify-center">
           <Image

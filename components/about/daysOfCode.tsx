@@ -2,6 +2,7 @@
 import { useTheme } from "next-themes";
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
+import { ScrollArea, ScrollBar } from "../ui/scroll-area";
 
 const themes = {
   light: ["#ffe6f0", "#ffb3c6", "#ff809f", "#ff4d79", "#ff1a53"],
@@ -19,13 +20,16 @@ const DaysOfCode = () => {
   const { theme } = useTheme();
   const currentTheme = theme as "dark" | "light" | undefined;
   return (
-    <div className="">
+    <div className="m-auto md:w-fit">
       <p className="lg:mb-4 text-pink-400 font-bold">Days of code</p>
-      <GitHubCalendar
-        theme={themes}
-        colorScheme={!currentTheme ? "dark" : currentTheme}
-        username="lakemi26"
-      />
+      <ScrollArea className="w-full overflow-scroll">
+        <GitHubCalendar
+          theme={themes}
+          colorScheme={!currentTheme ? "dark" : currentTheme}
+          username="lakemi26"
+        />
+        <ScrollBar orientation="horizontal" />
+      </ScrollArea>
     </div>
   );
 };
