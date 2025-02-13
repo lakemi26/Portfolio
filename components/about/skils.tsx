@@ -1,29 +1,25 @@
 import React from "react";
 import { IconCloud } from "../ui/icon-cloud";
-
-const slugs = [
-  "java",
-  "javascript",
-  "typescript",
-  "react",
-  "html15",
-  "css3",
-  "vercel",
-  "docker",
-  "git",
-  "github",
-  "visualstudiocode",
-  "firebase",
-  "androidstudio",
-  "figma",
-  "firebase",
-  "sql",
+const images = [
+  "/android.png",
+  "/azure.png",
+  "/aws.png",
+  "/css.png",
+  "/database.png",
+  "/docker.png",
+  "/git.png",
+  "/github.png",
+  "/html.png",
+  "/java.png",
+  "/js.png",
+  "/oracle.png",
+  "/pythonicon.png",
+  "/react.png",
+  "/typescript.png",
+  "/vscode.png",
 ];
 
 const Skils = () => {
-  const images = slugs.map(
-    (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`
-  );
   return (
     <div className="flex  w-[400px] items-center justify-center overflow-hidden rounded-lg border bg-background">
       <IconCloud images={images} />
