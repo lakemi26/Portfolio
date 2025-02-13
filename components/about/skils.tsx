@@ -21,7 +21,7 @@ const images = [
 
 const Skils = () => {
   return (
-    <div className="flex  w-[400px] items-center justify-center overflow-hidden rounded-lg border bg-background">
+    <div className="flex  w-[400px] items-center justify-center overflow-hidden rounded-lg bg-background">
       <IconCloud images={images} />
     </div>
   );
