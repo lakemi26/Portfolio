@@ -19,7 +19,7 @@ const enum WorkTypes {
 
 const Tab = () => {
   return (
-    <div className="text-pink-400 font-semibold text-4xl">
+    <div id="portfolio" className="text-pink-400 font-semibold text-4xl">
       <TextAnimate>My Portfolio</TextAnimate>
       <div className="m-auto w-full lg:w-fit mt-9">
         <Tabs defaultValue={WorkTypes.FrontEnd} className="lg:w-full">

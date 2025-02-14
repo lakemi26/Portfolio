@@ -2,6 +2,7 @@ import AboutSection from "@/components/about/aboutSection";
 import Banner from "@/components/Banner/banner";
 import Contact from "@/components/contact/contact";
 import ExperienceSection from "@/components/education/experienceSection";
+import Footer from "@/components/footer/footer";
 import Tab from "@/components/Portfolio/tab";
 
 export default function Home() {

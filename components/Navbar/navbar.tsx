@@ -9,11 +9,11 @@ export const Navbar = () => {
 
   const items: NavItemInterface[] = [
     {
-      url: "/portfolio",
+      url: "/#portfolio",
       label: "Portfólio",
     },
     {
-      url: "/about",
+      url: "/#sobre",
       label: "Sobre",
     },
     {
@@ -21,11 +21,11 @@ export const Navbar = () => {
       label: "Blog",
     },
     {
-      url: "/education",
+      url: "/#educacao",
       label: "Educação",
     },
     {
-      url: "/contact",
+      url: "/#contato",
       label: "Contato",
     },
   ];

@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar/navbar";
 import { ThemeProvider } from "next-themes";
 import Providers from "@/providers";
+import Footer from "@/components/footer/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,6 +39,7 @@ export default function RootLayout({
         <Providers>
           <Navbar />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>

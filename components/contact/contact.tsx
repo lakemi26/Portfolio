@@ -78,7 +78,7 @@ const Contact = () => {
   };
 
   return (
-    <div className=" flex gap-4 flex-col">
+    <div id="contato" className=" flex gap-4 flex-col">
       <p className="text-pink-400 font-semibold text-4xl">Contact</p>
       <div>
         <Form {...form}>
