@@ -1,6 +1,7 @@
 import React from "react";
 import { TextAnimate } from "../ui/text-animate";
 import TabList from "./tabList";
+import { InteractiveHoverButton } from "../ui/interactive-hover-button";
 
 const ExperienceSection = () => {
   return (
@@ -11,6 +12,9 @@ const ExperienceSection = () => {
         </TextAnimate>
       </div>
       <TabList />
+      <InteractiveHoverButton className="m-auto">
+        CV Download
+      </InteractiveHoverButton>
     </div>
   );
 };
