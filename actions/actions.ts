@@ -7,7 +7,8 @@ export const sendMessage = async (formData: MessageForm) => {
   for (const key in formData) {
     data.append(key, formData[key as keyof MessageForm]);
   }
-  const accessKey = "e1c06da1-dac8-4cca-803b-b42bac6df6d2";
+  const accessKey = process.env.API_KEY || "";
+
   data.append("access_key", accessKey);
   const opt: RequestInit = {
     method: "POST",

@@ -22,7 +22,7 @@ const DaysOfCode = () => {
   return (
     <div className="m-auto md:w-fit">
       <p className="lg:mb-4 text-pink-400 font-bold">Days of code</p>
-      <ScrollArea className="w-full overflow-scroll">
+      <ScrollArea className="w-full overflow-scroll overflow-y-scroll no-scrollbar">
         <GitHubCalendar
           theme={themes}
           colorScheme={!currentTheme ? "dark" : currentTheme}
