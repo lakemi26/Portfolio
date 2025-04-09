@@ -78,8 +78,8 @@ const Contact = () => {
   };
 
   return (
-    <div id="contato" className=" flex gap-4 flex-col">
-      <p className="text-pink-400 font-semibold text-4xl">Contact</p>
+    <div id="contato" className=" flex gap-4 flex-col mx-4 lg:ml-0">
+      <p className="text-pink-400 font-semibold text-4xl">Contato</p>
       <div>
         <Form {...form}>
           <form className="space-y-3" onSubmit={form.handleSubmit(onSubmit)}>
