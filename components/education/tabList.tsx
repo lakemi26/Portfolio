@@ -39,16 +39,9 @@ const TabList = () => {
               <HoverCardTrigger>
                 Análise e desenvolvimento de Sistemas
               </HoverCardTrigger>
-              <HoverCardContent>
+              <HoverCardContent className="bg-slate-900 p-1">
                 <p>FIAP</p>
                 <p>2023-2024</p>
-              </HoverCardContent>
-            </HoverCard>
-            <HoverCard>
-              <HoverCardTrigger>Engenharia de software</HoverCardTrigger>
-              <HoverCardContent>
-                <p>FIAP</p>
-                <p>2025- 2029</p>
               </HoverCardContent>
             </HoverCard>
           </div>
