@@ -8,13 +8,13 @@ const Icons = () => {
   return (
     <div className="flex gap-8 mt-5 ">
       <a
-        href="#"
+        href="https://github.com/lakemi26"
         className="aspect-square w-14 block fill-pink-400 hover:fill-pink-600 transition-all duration-150 ease-linear"
       >
         <Github />
       </a>
       <a
-        href="#"
+        href="https://www.linkedin.com/in/lakemi/"
         className="aspect-square w-14 block fill-pink-400 hover:fill-pink-600 transition-all duration-150 ease-linear"
       >
         <Linkedin />
