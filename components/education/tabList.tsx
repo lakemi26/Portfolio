@@ -48,7 +48,9 @@ const TabList = () => {
           <div className="flex flex-col gap-3">
             <p className="font-bold text-pink-500 text-xl">Certifications</p>
             <HoverCard>
-              <HoverCardTrigger>Python - FIAP</HoverCardTrigger>
+              <HoverCardTrigger className="z-10">
+                Python - FIAP
+              </HoverCardTrigger>
               <HoverCardContent>
                 <img
                   src={"python.png"}
@@ -58,7 +60,9 @@ const TabList = () => {
               </HoverCardContent>
             </HoverCard>
             <HoverCard>
-              <HoverCardTrigger>Java Fundamentos - FIAP</HoverCardTrigger>
+              <HoverCardTrigger className="z-10">
+                Java Fundamentos - FIAP
+              </HoverCardTrigger>
               <HoverCardContent>
                 <img
                   src={"javaFundamentos.png"}
@@ -68,7 +72,9 @@ const TabList = () => {
               </HoverCardContent>
             </HoverCard>
             <HoverCard>
-              <HoverCardTrigger>Gestão de Projetos - FIAP</HoverCardTrigger>
+              <HoverCardTrigger className="z-10">
+                Gestão de Projetos - FIAP
+              </HoverCardTrigger>
               <HoverCardContent>
                 <img
                   src={"gestaoProjetos.png"}
@@ -79,7 +85,7 @@ const TabList = () => {
             </HoverCard>
             <HoverCard>
               <HoverCardTrigger>Engenharia de Software - FIAP</HoverCardTrigger>
-              <HoverCardContent>
+              <HoverCardContent className="z-10">
                 <img
                   src={"engenhariaSoftware.png"}
                   alt="Certificado Engenharia de Software"
@@ -89,7 +95,7 @@ const TabList = () => {
             </HoverCard>
             <HoverCard>
               <HoverCardTrigger>Git e GitHub - ALURA</HoverCardTrigger>
-              <HoverCardContent>
+              <HoverCardContent className="z-10">
                 <img
                   src={"git1.jpg"}
                   alt="Certificado Git e GitHub"
