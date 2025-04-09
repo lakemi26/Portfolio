@@ -8,7 +8,9 @@ const Banner = () => {
     <div className="flex flex-col mt-4 gap-11 xl:gap-32 w-full xl:justify-between items-center  xl:flex-row">
       <div className="flex flex-col gap-6">
         <div className="flex flex-col gap-3 lg:gap-2 mt-5">
-          <p className="text-pink-400  text-4xl font-bold ">Hello World, I'm</p>
+          <p className="text-pink-400  text-4xl font-bold ">
+            Hello World, I&apos;m
+          </p>
           <MagicText text="Larissa Akemi" duration={250} />
           <WordRotate
             duration={2800}
