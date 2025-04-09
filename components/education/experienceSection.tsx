@@ -6,8 +6,8 @@ const ExperienceSection = () => {
   return (
     <div id="educacao" className="flex flex-col gap-10">
       <div>
-        <TextAnimate className="text-pink-400 font-semibold text-4xl">
-          Education & Experience
+        <TextAnimate className="text-pink-400 font-semibold text-4xl ml-4 lg:ml-0">
+          Educação & Experiência
         </TextAnimate>
       </div>
       <TabList />

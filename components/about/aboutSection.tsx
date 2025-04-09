@@ -6,9 +6,9 @@ import DaysOfCode from "./daysOfCode";
 
 const AboutSection = () => {
   return (
-    <div id="sobre" className="">
+    <div id="sobre" className="ml-4 lg:ml-0">
       <TextAnimate className="text-pink-400 font-semibold text-4xl">
-        About Me
+        Sobre mim
       </TextAnimate>
       <div className="flex gap-8 mt-9">
         <div className="flex flex-col gap-10">
