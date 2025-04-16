@@ -14,7 +14,7 @@ const ExperienceSection = () => {
       </div>
       <TabList />
       <Link
-        href="./homeBanner.webp"
+        href="./cv_LarissaAkemi.pdf"
         target="_blank"
         download
         className="m-auto border-2 border-pink-500 rounded-full text-pink-500 font-bold p-3 hover:bg-blue-950"
