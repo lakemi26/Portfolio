@@ -15,9 +15,9 @@ interface CardProps {
 const Card = ({ image, title, text, deployUrl, codeUrl }: CardProps) => {
   const { theme } = useTheme();
   return (
-    <div className="bg-background border border-pink-400 p-3 rounded-md ">
+    <div className="bg-background border border-pink-400 p-3 rounded-md h-[410px]">
       <div className="space-y-2 ">
-        <div className="rounded-md overflow-hidden flex justify-center">
+        <div className="rounded-md overflow-hidden flex justify-center w-[290px] h-[190px]">
           <Image
             src={!!image ? image : "/placeholder.jpg"}
             alt="alguma coisa"
@@ -28,8 +28,10 @@ const Card = ({ image, title, text, deployUrl, codeUrl }: CardProps) => {
         <div className="flex justify-center">
           <CardTitle title={title} />
         </div>
-        <p className="text-sm flex justify-center">{text}</p>
-        <div className="flex gap-4 justify-center">
+        <p className="text-sm font-semibold text-center flex justify-center h-[100px] text-pink-300">
+          {text}
+        </p>
+        <div className="flex gap-4 justify-center mt-auto">
           <div>{deployUrl && <Buttons title="Site" url={deployUrl} />}</div>
           <div>{codeUrl && <Buttons title="Git" url={codeUrl} />}</div>
         </div>

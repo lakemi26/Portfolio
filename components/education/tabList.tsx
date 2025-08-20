@@ -44,6 +44,15 @@ const TabList = () => {
                 <p>2023-2024</p>
               </HoverCardContent>
             </HoverCard>
+            <HoverCard>
+              <HoverCardTrigger>
+                Pós-Graduação Front-End Engineering
+              </HoverCardTrigger>
+              <HoverCardContent className="bg-slate-900 p-1">
+                <p>FIAP</p>
+                <p>2025-2026</p>
+              </HoverCardContent>
+            </HoverCard>
           </div>
           <div className="flex flex-col gap-3">
             <p className="font-bold text-pink-500 text-xl">Certifications</p>
@@ -111,7 +120,9 @@ const TabList = () => {
           </div>
         </TabsContent>
         {/*Experience */}
-        <TabsContent value={SectionTypes.Experience}>Freelancer</TabsContent>
+        <TabsContent value={SectionTypes.Experience}>
+          Freelancer | 2025 - agora
+        </TabsContent>
       </Tabs>
     </div>
   );
