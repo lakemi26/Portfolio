@@ -60,7 +60,7 @@ export const Navbar = () => {
         </ul>
       </div>
       <div className="absolute right-4 top-[50%] lg:top-[35%]">
-        <ThemeToggle />
+        {/* <ThemeToggle /> */}
       </div>
     </nav>
   );
